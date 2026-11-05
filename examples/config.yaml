@@ -92,6 +92,11 @@ providers:
   sms77:
     api_key: 'api_key'
     debug: false
+  anexia:
+    api_key: 'ANEXIA_API_KEY'
+    encoding: 'GSM'
+    sender: 'MySender'
+    delivery_report: true
   ghasedak:
     api_token: 'GHASEDAK_API_KEY'
   sfr:

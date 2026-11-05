@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sachet
+  labels:
+    app.kubernetes.io/name: sachet
+    app.kubernetes.io/part-of: alerting
+spec:
+  selector:
+    app.kubernetes.io/name: sachet
+  ports:
+    - name: http
+      port: 9876
+      targetPort: http
+      protocol: TCP

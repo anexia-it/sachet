@@ -15,6 +15,7 @@ import (
 
 	"github.com/messagebird/sachet"
 	"github.com/messagebird/sachet/provider/aliyun"
+	"github.com/messagebird/sachet/provider/anexia"
 	"github.com/messagebird/sachet/provider/aspsms"
 	"github.com/messagebird/sachet/provider/cm"
 	"github.com/messagebird/sachet/provider/esendex"
@@ -132,6 +133,8 @@ func providerByName(name string) (sachet.Provider, error) {
 		return nowsms.NewNowSms(config.Providers.NowSms), nil
 	case "aliyun":
 		return aliyun.NewAliyun(config.Providers.Aliyun)
+	case "anexia":
+		return anexia.NewAnexia(config.Providers.Anexia), nil
 	case "ovh":
 		return ovh.NewOvh(config.Providers.OVH)
 	case "tencentcloud":

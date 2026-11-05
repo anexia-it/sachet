@@ -7,6 +7,7 @@ import (
 	"gopkg.in/yaml.v2"
 
 	"github.com/messagebird/sachet/provider/aliyun"
+	"github.com/messagebird/sachet/provider/anexia"
 	"github.com/messagebird/sachet/provider/aspsms"
 	"github.com/messagebird/sachet/provider/cm"
 	"github.com/messagebird/sachet/provider/esendex"
@@ -68,6 +69,7 @@ var config struct {
 		Pushbullet   pushbullet.Config
 		NowSms       nowsms.Config
 		Aliyun       aliyun.Config
+		Anexia       anexia.Config
 		OVH          ovh.Config
 		TencentCloud tencentcloud.Config
 		Sap          sap.Config
